@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>🎨分类 on Qin&#39;s Blog</title>
-    <link>https://llb.im/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in 🎨分类 on Qin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 18 Jun 2023 00:06:03 +0800</lastBuildDate><atom:link href="https://llb.im/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jun 2023 00:06:03 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>折腾之路</title>
-      <link>https://llb.im/categories/%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF/</link>
+      <link>/categories/%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF/</link>
       <pubDate>Sun, 18 Jun 2023 00:06:03 +0800</pubDate>
       
-      <guid>https://llb.im/categories/%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF/</guid>
+      <guid>/categories/%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>生活</title>
-      <link>https://llb.im/categories/%E7%94%9F%E6%B4%BB/</link>
+      <link>/categories/%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Mon, 12 Jun 2023 20:06:33 +0800</pubDate>
       
-      <guid>https://llb.im/categories/%E7%94%9F%E6%B4%BB/</guid>
+      <guid>/categories/%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     
     <item>
       <title>无分类</title>
-      <link>https://llb.im/categories/%E6%97%A0%E5%88%86%E7%B1%BB/</link>
+      <link>/categories/%E6%97%A0%E5%88%86%E7%B1%BB/</link>
       <pubDate>Sun, 11 Jun 2023 21:58:46 +0800</pubDate>
       
-      <guid>https://llb.im/categories/%E6%97%A0%E5%88%86%E7%B1%BB/</guid>
+      <guid>/categories/%E6%97%A0%E5%88%86%E7%B1%BB/</guid>
       <description></description>
     </item>
     

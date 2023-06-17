@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>生活 on Qin&#39;s Blog</title>
-    <link>https://llb.im/categories/%E7%94%9F%E6%B4%BB/</link>
+    <link>/categories/%E7%94%9F%E6%B4%BB/</link>
     <description>Recent content in 生活 on Qin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 12 Jun 2023 20:06:33 +0800</lastBuildDate><atom:link href="https://llb.im/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jun 2023 20:06:33 +0800</lastBuildDate><atom:link href="/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>收到了人生中的第一束花</title>
-      <link>https://llb.im/posts/first_flowers_in_life/</link>
+      <link>/posts/first_flowers_in_life/</link>
       <pubDate>Mon, 12 Jun 2023 20:06:33 +0800</pubDate>
       
-      <guid>https://llb.im/posts/first_flowers_in_life/</guid>
+      <guid>/posts/first_flowers_in_life/</guid>
       <description>收到了人生中的第一束花，开心</description>
     </item>
     

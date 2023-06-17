@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>🧩标签 on Qin&#39;s Blog</title>
-    <link>https://llb.im/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in 🧩标签 on Qin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 18 Jun 2023 00:06:03 +0800</lastBuildDate><atom:link href="https://llb.im/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jun 2023 00:06:03 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloudflare</title>
-      <link>https://llb.im/tags/cloudflare/</link>
+      <link>/tags/cloudflare/</link>
       <pubDate>Sun, 18 Jun 2023 00:06:03 +0800</pubDate>
       
-      <guid>https://llb.im/tags/cloudflare/</guid>
+      <guid>/tags/cloudflare/</guid>
       <description></description>
     </item>
     
     <item>
       <title>图床</title>
-      <link>https://llb.im/tags/%E5%9B%BE%E5%BA%8A/</link>
+      <link>/tags/%E5%9B%BE%E5%BA%8A/</link>
       <pubDate>Sun, 18 Jun 2023 00:06:03 +0800</pubDate>
       
-      <guid>https://llb.im/tags/%E5%9B%BE%E5%BA%8A/</guid>
+      <guid>/tags/%E5%9B%BE%E5%BA%8A/</guid>
       <description></description>
     </item>
     
     <item>
       <title>生活</title>
-      <link>https://llb.im/tags/%E7%94%9F%E6%B4%BB/</link>
+      <link>/tags/%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Mon, 12 Jun 2023 20:06:33 +0800</pubDate>
       
-      <guid>https://llb.im/tags/%E7%94%9F%E6%B4%BB/</guid>
+      <guid>/tags/%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://llb.im/tags/hugo/</link>
+      <link>/tags/hugo/</link>
       <pubDate>Sun, 11 Jun 2023 21:58:46 +0800</pubDate>
       
-      <guid>https://llb.im/tags/hugo/</guid>
+      <guid>/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>主题</title>
-      <link>https://llb.im/tags/%E4%B8%BB%E9%A2%98/</link>
+      <link>/tags/%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sun, 11 Jun 2023 21:58:46 +0800</pubDate>
       
-      <guid>https://llb.im/tags/%E4%B8%BB%E9%A2%98/</guid>
+      <guid>/tags/%E4%B8%BB%E9%A2%98/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>图床 on Qin&#39;s Blog</title>
+    <link>https://llb.im/tags/%E5%9B%BE%E5%BA%8A/</link>
+    <description>Recent content in 图床 on Qin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 18 Jun 2023 00:06:03 +0800</lastBuildDate><atom:link href="https://llb.im/tags/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用Cloudflare Page和Telegraph搭建图床</title>
+      <link>https://llb.im/posts/image-bed-with-cloudflare-telegraph/</link>
+      <pubDate>Sun, 18 Jun 2023 00:06:03 +0800</pubDate>
+      
+      <guid>https://llb.im/posts/image-bed-with-cloudflare-telegraph/</guid>
+      <description>利用Cloudflare Page和Telegraph搭建免费图床，同时配置PicGo实现图床便捷上传</description>
+    </item>
+    
+  </channel>
+</rss>

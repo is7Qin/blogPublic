@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>📚文章 on Qin&#39;s Blog</title>
+    <link>https://llb.im/posts/</link>
+    <description>Recent content in 📚文章 on Qin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 18 Jun 2023 00:06:03 +0800</lastBuildDate><atom:link href="https://llb.im/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用Cloudflare Page和Telegraph搭建图床</title>
+      <link>https://llb.im/posts/image-bed-with-cloudflare-telegraph/</link>
+      <pubDate>Sun, 18 Jun 2023 00:06:03 +0800</pubDate>
+      
+      <guid>https://llb.im/posts/image-bed-with-cloudflare-telegraph/</guid>
+      <description>利用Cloudflare Page和Telegraph搭建免费图床，同时配置PicGo实现图床便捷上传</description>
+    </item>
+    
+    <item>
+      <title>收到了人生中的第一束花</title>
+      <link>https://llb.im/posts/first_flowers_in_life/</link>
+      <pubDate>Mon, 12 Jun 2023 20:06:33 +0800</pubDate>
+      
+      <guid>https://llb.im/posts/first_flowers_in_life/</guid>
+      <description>收到了人生中的第一束花，开心</description>
+    </item>
+    
+    <item>
+      <title>Hello Blog</title>
+      <link>https://llb.im/posts/hello_blog/</link>
+      <pubDate>Sun, 11 Jun 2023 21:58:46 +0800</pubDate>
+      
+      <guid>https://llb.im/posts/hello_blog/</guid>
+      <description>买了个.im域名，准备建个博客。 本来还想选Hexo的，想接着用好看的butterfly。 但转头想想hexo的生成速度太慢了，体验确实不够好，</description>
+    </item>
+    
+  </channel>
+</rss>

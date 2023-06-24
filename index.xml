@@ -6,7 +6,16 @@
     <description>Recent content on Qin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 18 Jun 2023 00:06:03 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jun 2023 23:27:46 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>端午海边游</title>
+      <link>/posts/june-beach-trip/</link>
+      <pubDate>Thu, 22 Jun 2023 23:27:46 +0800</pubDate>
+      
+      <guid>/posts/june-beach-trip/</guid>
+      <description>端午约了几个朋友去海边玩，天气很不错</description>
+    </item>
+    
     <item>
       <title>利用Cloudflare Page和Telegraph搭建图床</title>
       <link>/posts/image-bed-with-cloudflare-telegraph/</link>
@@ -18,19 +27,19 @@
     
     <item>
       <title>收到了第一束花</title>
-      <link>/posts/first_flowers_in_life/</link>
+      <link>/posts/first-flowers-in-life/</link>
       <pubDate>Mon, 12 Jun 2023 20:06:33 +0800</pubDate>
       
-      <guid>/posts/first_flowers_in_life/</guid>
+      <guid>/posts/first-flowers-in-life/</guid>
       <description>收到了人生中的第一束花，开心</description>
     </item>
     
     <item>
       <title>Hello Blog</title>
-      <link>/posts/hello_blog/</link>
+      <link>/posts/hello-blog/</link>
       <pubDate>Sun, 11 Jun 2023 21:58:46 +0800</pubDate>
       
-      <guid>/posts/hello_blog/</guid>
+      <guid>/posts/hello-blog/</guid>
       <description>Hello，Blog</description>
     </item>
     

@@ -14,6 +14,29 @@
       
       <guid>https://llb.im/posts/img-bed-dns-cache-poisoning/</guid>
       <description>博客的图床被劫持污染，原因CNAME到CF的pages域名</description>
+      <content:encoded><![CDATA[<h1 id="问题">问题</h1>
+<p>有朋友反馈 打开我的博客 里面图片显示不出来</p>
+<p>遂拿起手机浏览，OK，确实打不开；</p>
+<h1 id="排查">排查</h1>
+<h2 id="一">一</h2>
+<p>手机浏览器显示SSL证书不正确，SSL证书 server name为：<code>djfidicjmwos.com</code></p>
+<p>恩？6</p>
+<p>突然想起来图床用的Cloudflare pages，域名又是直接CNAME到pages域名上的。</p>
+<p>应该是DNS污染。</p>
+<h2 id="二">二</h2>
+<p>itdog dns记录查询一下：</p>
+<p><img loading="lazy" src="https://telphimg.llb.im/file/e1000a9881ea7a1801966.png" alt="image-20230625192013296"  />
+</p>
+<p>出现了个不属于Cloudflare ASN的ip</p>
+<h2 id="三">三</h2>
+<p><img loading="lazy" src="https://telphimg.llb.im/file/a1c7115d46a92cbe6f7ee.png" alt="image-20230625192047817"  />
+</p>
+<p>OK，确定了问题</p>
+<h1 id="修复">修复</h1>
+<p>把DNS CNAME记录改成别的自选域名，顺便把我的爱国云旗舰版DNS解析 ttl改成1s</p>
+<p>解决问题。</p>
+<p>但还有隐患，域名不直接CNAME到Cloudflare pages的域名，CF会不会直接把我自定义域名扬咯？</p>
+]]></content:encoded>
     </item>
     
   </channel>

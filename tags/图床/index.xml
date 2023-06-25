@@ -14,6 +14,29 @@
       
       <guid>https://llb.im/posts/image-bed-with-cloudflare-telegraph/</guid>
       <description>利用Cloudflare Page和Telegraph搭建免费图床，同时配置PicGo实现图床便捷上传</description>
+      <content:encoded><![CDATA[<h1 id="前言">前言</h1>
+<p>博客初建，需要有一个图床来放图片，毕竟扔在本地再push上去占空间不讨好。</p>
+<p>而且markdown写文章引用本地目录的图片，无法做到所见所得。</p>
+<h1 id="项目">项目</h1>
+<blockquote>
+<p>项目Gayhub地址：<a href="https://github.com/cf-pages/Telegraph-Image">https://github.com/cf-pages/Telegraph-Image</a></p>
+<p>是我不知道从哪逛着逛着就逛出来的😆</p>
+<p>挺好的一个项目，利用Cloudflare反代Telegraph做成的图床。</p>
+</blockquote>
+<p>项目里的readme写得已经够详尽了，不赘述。</p>
+<h1 id="完成搭建">完成搭建</h1>
+<p><img loading="lazy" src="https://telphimg.llb.im/file/db6c7185f3ea30f5a3512.jpg" alt=""  />
+</p>
+<h1 id="使用">使用</h1>
+<p>我写博客用的是Typora，可以配置自动使用PicGo上传图床，但在issue里找的PicGo插件貌似用不了了。</p>
+<p>又看到另一位道友指出的<a href="https://github.com/yuki-xin/picgo-plugin-web-uploader">yuki-xin/picgo-plugin-web-uploader</a>插件可用，但下载导入后发现返回的url里没有网址链接。</p>
+<p>所以重新fork一遍改了下。</p>
+<p>Gayhub地址：<a href="https://github.com/is7Qin/picgo-plugin-web-uploader">is7Qin/picgo-plugin-web-uploader</a></p>
+<p><img loading="lazy" src="https://telphimg.llb.im/file/88dace8a6535e13341cef.png" alt="image-20230618000133108"  />
+</p>
+<h1 id="结语">结语</h1>
+<p>很不错，就是怕Telegraph没了😇。</p>
+]]></content:encoded>
     </item>
     
   </channel>

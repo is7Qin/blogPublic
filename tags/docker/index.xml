@@ -14,6 +14,124 @@
       
       <guid>https://llb.im/posts/run-miniflux-rss/</guid>
       <description>用Docker跑Miniflux搭建RSS服务</description>
+      <content:encoded><![CDATA[<h1 id="前言">前言</h1>
+<p>见前文<a href="https://llb.im/posts/rss-ideas/">搭建RSS服务的想法 | Qin&rsquo;s Blog (llb.im)</a></p>
+<h1 id="搭建">搭建</h1>
+<h2 id="docker-compose">Docker-Compose</h2>
+<p>我打算用docker来跑，比较方便，依据官方文档改改，建个目录写下<code>docker-compose.yaml</code>文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">miniflux</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">miniflux/miniflux:latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;14322:8080&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">db</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l">service_healthy</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">DATABASE_URL=postgres://miniflux:secret@db/miniflux?sslmode=disable</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">RUN_MIGRATIONS=1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">CREATE_ADMIN=1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">ADMIN_USERNAME=admin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">ADMIN_PASSWORD=test123</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">db</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">postgres:15</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">POSTGRES_USER=miniflux</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">POSTGRES_PASSWORD=secret</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./miniflux-db:/var/lib/postgresql/data</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">healthcheck</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;CMD&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;pg_isready&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;-U&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;miniflux&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l">10s</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">start_period</span><span class="p">:</span><span class="w"> </span><span class="l">30s</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>更改变量管理员账户密码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">ADMIN_USERNAME=admin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">ADMIN_PASSWORD=test123</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Run：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker-compose up -d
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="nginx">Nginx</h2>
+<p>再用nginx反向代理一下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">location</span> <span class="s">/</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">proxy_pass</span> <span class="s">http://127.0.0.1:14322</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">proxy_set_header</span> <span class="s">Host</span> <span class="nv">$http_host</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">proxy_set_header</span> <span class="s">X-NginX-Proxy</span> <span class="s">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">proxy_http_version</span> <span class="mi">1</span><span class="s">.1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">proxy_set_header</span> <span class="s">Upgrade</span> <span class="nv">$http_upgrade</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">proxy_set_header</span> <span class="s">Connection</span> <span class="s">&#34;upgrade&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">proxy_max_temp_file_size</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="登录">登录</h2>
+<p><img loading="lazy" src="https://telphimg.llb.im/file/49d8383af943679ae1788.png" alt="image-20230625140057727"  />
+</p>
+<h1 id="加rss源">加RSS源</h1>
+<p>这部分不赘述。</p>
+<p>RSS源可围观DIYgod大佬的<a href="https://docs.rsshub.app/">RSSHub</a></p>
+<p><img loading="lazy" src="https://telphimg.llb.im/file/5142fd66e41a0981a59d4.png" alt="image-20230625140836992"  />
+</p>
+]]></content:encoded>
     </item>
     
   </channel>

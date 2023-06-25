@@ -14,6 +14,16 @@
       
       <guid>https://llb.im/posts/hello-blog/</guid>
       <description>Hello，Blog</description>
+      <content:encoded><![CDATA[<p>买了个.im域名，准备建个博客。</p>
+<p>本来还想选Hexo的，想接着用好看的butterfly。</p>
+<p>但转头想想hexo的生成速度太慢了，体验确实不够好，来试试Hugo。</p>
+<p>结果butterfly没有hugo版本，遗憾……</p>
+<p>希望butterfly的作者或者其他大神能做出个Hugo版本，这样再好不过了！</p>
+<p>最后找了PaperMod主题，还挺不错的。</p>
+<blockquote>
+<p>Hello, Hugo and my Blog.</p>
+</blockquote>
+]]></content:encoded>
     </item>
     
   </channel>

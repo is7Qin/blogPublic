@@ -6,7 +6,16 @@
     <description>Recent content in 📚文章 on Qin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 22 Jun 2023 23:27:46 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jun 2023 12:31:45 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>搭建RSS服务的想法</title>
+      <link>/posts/rss-ideas/</link>
+      <pubDate>Sun, 25 Jun 2023 12:31:45 +0800</pubDate>
+      
+      <guid>/posts/rss-ideas/</guid>
+      <description>一直有一个搭建RSS信息流的想法</description>
+    </item>
+    
     <item>
       <title>端午海边游</title>
       <link>/posts/june-beach-trip/</link>
